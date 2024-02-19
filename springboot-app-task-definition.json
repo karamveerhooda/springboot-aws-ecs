@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-north-1:974142680250:task-definition/springboot-app-task-definition:6",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:471112971975:task-definition/springboot-app-task-definition:2",
     "containerDefinitions": [
         {
             "name": "springboot-example",
-            "image": "974142680250.dkr.ecr.eu-north-1.amazonaws.com/springboot-example:latest",
+            "image": "471112971975.dkr.ecr.us-east-1.amazonaws.com/springboot-example:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -25,7 +25,7 @@
                 "options": {
                     "awslogs-create-group": "true",
                     "awslogs-group": "/ecs/springboot-app-task-definition",
-                    "awslogs-region": "eu-north-1",
+                    "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
                 },
                 "secretOptions": []
@@ -33,10 +33,10 @@
         }
     ],
     "family": "springboot-app-task-definition",
-    "taskRoleArn": "arn:aws:iam::974142680250:role/ecsTaskExecutionRole",
-    "executionRoleArn": "arn:aws:iam::974142680250:role/ecsTaskExecutionRole",
+    "taskRoleArn": "arn:aws:iam::471112971975:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::471112971975:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 6,
+    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -83,6 +83,6 @@
         "operatingSystemFamily": "LINUX"
     },
     "registeredAt": "2023-12-08T19:03:51.274Z",
-    "registeredBy": "arn:aws:iam::974142680250:user/integration-ninjas",
+    "registeredBy": "arn:aws:iam::471112971975:user/sayantan.dutta@capgemini.com",
     "tags": []
 }
