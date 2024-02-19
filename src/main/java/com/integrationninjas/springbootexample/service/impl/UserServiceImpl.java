@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public String createUser(UserDto userDto) {
         User user = new User();
-        user.setFirstName(userDto.getFirstName());
+        user.setFirstName(userDto. getFirstName());
         user.setLastName(userDto.getLastName());
         user.setEmail(userDto.getEmail());
         userDao.saveAndFlush(user);
