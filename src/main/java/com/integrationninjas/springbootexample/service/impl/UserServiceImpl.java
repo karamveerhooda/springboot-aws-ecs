@@ -1,15 +1,16 @@
 package com.integrationninjas.springbootexample.service.impl;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+//import com.integrationninjas.springbootexample.dao.DeptDao;
 import com.integrationninjas.springbootexample.dao.UserDao;
 import com.integrationninjas.springbootexample.dto.UserDto;
 import com.integrationninjas.springbootexample.entity.User;
 import com.integrationninjas.springbootexample.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -20,7 +21,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public String createUser(UserDto userDto) {
         User user = new User();
-        user.setFirstName(userDto. getFirstName());
+        user.setFirstName(userDto.getFirstName());
         user.setLastName(userDto.getLastName());
         user.setEmail(userDto.getEmail());
         userDao.saveAndFlush(user);
@@ -43,4 +44,5 @@ public class UserServiceImpl implements UserService {
         }
         return dtoList;
     }
+    
 }
