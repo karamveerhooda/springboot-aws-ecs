@@ -28,7 +28,7 @@ public class DeptServiceImpl implements DeptService {
        // user. setLastName(userDto.getLastName());
        // dept.setEmail(userDto.getEmail());
         deptDao.saveAndFlush(dept);
-        return "User Added Successfully";
+        return "Department Added Successfully";
     }
 
     @Override
