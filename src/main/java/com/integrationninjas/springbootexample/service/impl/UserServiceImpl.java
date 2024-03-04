@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
         user.setLastName(userDto.getLastName());
         user.setEmail(userDto.getEmail());
         userDao.saveAndFlush(user);
-        return "User Added Successfully";
+        return "New user Added Successfully";
     }
 
     @Override
